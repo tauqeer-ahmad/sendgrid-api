@@ -1,4 +1,4 @@
-<!-- email_template.html -->
+<!-- email_template.erb -->
 <html>
 <head>
     <style>
@@ -18,7 +18,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <p>Hello, this is a responsive email!</p>
+        <p>Hello, <%= @recipient_name %>, this is a responsive email!</p>
         <img src="your_image_link_here" class="mobile-full-width" alt="Responsive Image" />
         <p class="mobile-hide">This text will be hidden on mobile.</p>
     </div>
